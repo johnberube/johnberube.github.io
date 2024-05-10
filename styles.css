@@ -1,0 +1,138 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    height: 100%;
+}
+
+nav {
+    position: relative;
+    height: 50vh;
+    background-color: #fff;
+    overflow: hidden; /* Ensures nothing spills out of navigation area */
+}
+
+nav a, .pre-link {
+    position: absolute;
+    color: #2454FF;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.pre-link {
+    color: #07020D; /* A lighter, more subtle color for the pre-text */
+    font-style: italic;
+    transform: rotate(-3deg); /* Slightly more tilted to differentiate from link */
+}
+
+.link-writing {
+    top: 20%;
+    left: 10%;
+    transform: rotate(-2deg);
+    font-weight: bold;
+}
+
+#pre-writing {
+    top: 14%; /* Slightly above the link */
+    left: 5%; /* Starting a bit to the left of the link */
+}
+
+.link-art {
+    bottom: 20%;
+    right: 10%;
+    transform: rotate(2deg);
+    font-weight: bold;
+}
+
+#pre-art {
+    bottom: 12%; /* Slightly below the link */
+    right: 5%; /* Starting a bit to the right of the link */
+}
+
+section {
+    padding: 20px;
+}
+
+article, div {
+    margin: 20px 0;
+}
+
+footer, header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    color: #2454FF;
+    position: relative;
+}
+
+.contact-line {
+    font-size: 24px;
+    transform: rotate(-2deg);
+    display: inline-block; /* Makes the rotation look better */
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.email-icon, .linkedin-icon, .spotify-icon {
+    display: inline-block;
+    margin: 0 10px;
+    width: 24px; /* Adjust size as necessary */
+    height: 24px; /* Adjust size as necessary */
+}
+
+.email-icon img, .linkedin-icon img, .spotify-icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+.JOHN {
+    font-weight: bold
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.art-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ensures the gallery is responsive */
+    gap: 20px;
+    padding: 20px;
+}
+
+.art-piece {
+    width: 300px;  /* Fixed width for all items */
+    height: auto;  /* Height adjusts to content */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Stacks the image and text vertically */
+}
+
+.art-piece img {
+    width: 100%; /* Image takes full width of the container */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image covers the area, may crop */
+}
+
+.art-piece p {
+    width: 100%; /* Ensures the text block takes full width */
+}
+
+
+body > * {
+    flex-shrink: 0;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bold {
+    font-weight: bold;
+}
